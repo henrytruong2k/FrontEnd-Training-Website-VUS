@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>VUS- ANH VĂN HỘI VIỆT MỸ</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                    </svg>
+                </a>
+            </span>
+            <ul class="nav__links">
+                <li class="nav__link"><a href="#">TRANG CHỦ</a> </li>
+                <li class="nav__link"><a href="#about-us">GIỚI THIỆU</a> </li>
+                <li class="nav__link"><a href="#">THÀNH TỰU</a> </li>
+                <li class="nav__link"><a href="#courses">CÁC KHÓA HỌC</a></li>
+                <li class="nav__link"><a href="#news">TIN TỨC & SỰ KIỆN</a> </li>
+                <li class="nav__link"><a href="#">CHẤT LƯỢNG GIẢNG DẠY</a> </li>
+                <li class="nav__link"><a href="#">GÓC HỌC VIÊN</a> </li>
+                <li class="nav__link"><a href="#">GALLERY</a> </li>
+                <li class="nav__link"><a href="#">CƠ HỘI NGHỀ NGHIỆP</a> </li>
+                <li class="nav__link"><a href="#">LIÊN HỆ</a> </li>
+            </ul>
+        </div>
+        
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            
+            <a href="#courses" onclick="closeSlideMenu()">CÁC KHÓA HỌC</a>
+            <a href="#news" onclick="closeSlideMenu()">TIN TỨC & SỰ KIỆN</a>
+            <a href="#" onclick="closeSlideMenu()">CHẤT LƯỢNG GIẢNG DẠY</a>
+            <a href="#" onclick="closeSlideMenu()">GÓC HỌC VIÊN</a>
+            <a href="#" onclick="closeSlideMenu()">GALLERY</a>
+            <a href="#" onclick="closeSlideMenu()">CƠ HỘI NGHỀ NGHIỆP</a>
+            <a href="#" onclick="closeSlideMenu()">LIÊN HỆ</a>
+        </div>
+
+    </header>
+
+    <section>
+        
+        <div id="main">
+            <div class="banner">
+                <div class="banner__logo">
+                    <a href="#" title="VUS - Anh Văn Hội Việt Mỹ">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+    
+                <div class="banner__slogan">
+                    <a href="#" title="Tiếng anh là tương lai của bạn">
+                        <img src="img/slogan.png" alt="slogan">
+                    </a>
+                </div>
+            </div>
+
+            
+            
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <a href="#"><img src="img/slider_1.png" style="width:100%"></a>
+                </div>
+            
+                <div class="mySlides fade">
+                    <a href="#"><img src="img/slider_2.png" style="width:100%"></a> 
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div class="dots" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+            <!-- slider -->
+
+
+            <div class="about-us" id="about-us">
+                <div class="about-us__title">
+                    <h3>GIỚI THIỆU</h3>
+                    <img src="img/line.png" alt="" class="line">
+                </div>
+    
+                <div class="about-us__caption">
+                    <div class="about-us__caption-row">
+                        <div class="about-us__caption-cell box1">
+                            Các bạn đang đứng trước ngưỡng cửa của thời kỳ hội nhập, khi tri thức và công nghệ tiên tiến của nhân loại được chia sẻ rộng rãi trên các phương tiện truyền thông đại chúng, đây cũng là thời điểm mà Anh ngữ - ngôn ngữ giao tiếp toàn cầu - là một sức mạnh to lớn trong tương lai mà các cá nhân sở hữu sẽ đạt được những thăng tiến quan trọng trong cuộc đời của mình.
+                        </div>
+                        <div class="about-us__caption-cell box2">
+                            Để tiếp sức cho thế hệ Việt Nam trên bước đường hội nhập, Anh Văn Hội Việt Mỹ cam kết mang đến những chương trình đào tạo Anh ngữ chất lượng hàng đầu Việt Nam thông qua việc thường xuyên cập nhật những xu hướng và phương pháp giảng dạy hiện đại nhất của thế giới bằng việc hợp tác với đối tác chiến lược là Đại học CUNY Hoa Kỳ (The City University of New York) - Đại học công lập lớn thức 3 Hoa Kỳ với 550.000 sinh viên đang theo học.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="courses" id="courses">
+                <div class="courses__title">
+                    <h3>CÁC CHƯƠNG TRÌNH ANH NGỮ TẠI VUS</h3>
+                    <img src="img/line.png" alt="" class="line">
+                </div>
+                
+                <div class="courses__list-cards">
+                    <div class="courses__list-card">
+                        <a href="#" title="ANH NGỮ MẪU GIÁO SMARTKIDS" style="cursor: pointer;"><img src="img/chuong_trinh_1.png" alt="">
+                            <h4>
+                                ANH NGỮ MẪU GIÁO SMARTKIDS
+                            </h4>
+                        </a>
+                        <p>Dành cho học viên trẻ em từ 4 đến 6 tuổi</p>
+                        <div class="caption"><a href="">Chương trình 1</a> </div>
+                    </div>
+                        
+                    <div class="courses__list-card">
+                        <a href="#" title="ANH NGỮ THIẾU NHI SUPERKIDS" style="cursor: pointer;"><img src="img/chuong_trinh_2.png" alt="">
+                            <h4>
+                                ANH NGỮ THIẾU NHI SUPERKIDS
+                            </h4>   
+                        </a>
+                        <p>Dành cho học viên trẻ em từ 6 đến 11 tuổi</p>
+                        <div class="caption"><a href="">Chương trình 2</a> </div>
+                    </div>
+                    <div class="courses__list-card">
+                        <a href="#" title="ANH NGỮ THIẾU NIÊN YOUNG LEADERS" style="cursor: pointer;"><img src="img/chuong_trinh_3.png" alt="">
+                            <h4>
+                                <a href="#">ANH NGỮ THIẾU NIÊN YOUNG LEADERS</a>
+                            </h4>
+                        </a>
+                        <p>Dành cho học viên thiếu niên từ 11 - 15 tuổi</p>
+                        <div class="caption"><a href="">Chương trình 3</a> </div>
+                    </div>
+                    <div class="courses__list-card">
+                        <a href="#" title="ANH NGỮ GIAO TIẾP QUỐC TẾ EIC" style="cursor: pointer;"><img src="img/chuong_trinh_4.png" alt="">
+                            <h4>
+                                ANH NGỮ GIAO TIẾP QUỐC TẾ EIC
+                            </h4>
+                        </a>
+                        <p>Dành cho học viên người lớn từ 17 tuổi</p>
+                        <div class="caption"><a href="">Chương trình 4</a> </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="news" id="news">
+                <div class="news__title">
+                    <h3>TIN TỨC & SỰ KIỆN</h3>
+                    <img src="img/line.png" alt="" class="line">
+                </div>
+                
+                <figure class="news__imgs">
+                    <div class="news__img--huge">
+                        <a href="#" title="CÙNG VUS VUI HỘI TRĂNG RẰM TẠI THÀNH PHỐ TUỔI THƠ" style="cursor: pointer;"><img src="img/tin_tuc_1.png" alt="">
+                            <div class="caption-hot">
+                                <span>CÙNG VUS VUI HỘI TRĂNG RẰM TẠI "THÀNH PHỐ TUỔI THƠ"</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="news__img-col">
+                        <div class="news__img">
+                            <a href="#" title="2.947 HỌC VIÊN VUS NHẬN CHỨNG CHỈ QUỐC TẾ CAMBRIDGE" style="cursor: pointer;"><img src="img/tin_tuc_2.png" alt=""></a>
+                            <div class="caption">
+                                <span>2.947 HỌC VIÊN VUS NHẬN CHỨNG CHỈ QUỐC TẾ CAMBRIDGE</span>
+                            </div>
+                        </div>
+                        <div class="news__img">
+                            <a href="#" title="GALA TRAO GIẢI VUS SUMMER CON-TEST 2016 BE A STAR" style="cursor: pointer;"><img src="img/tin_tuc_1.png" alt=""></a>
+                            <div class="caption">
+                                <span>GALA TRAO GIẢI VUS SUMMER CON-TEST 2016 BE A STAR</sp>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="news__img-col">
+                        <a href="#" title="842 HỌC VIÊN CỦA HỆ THỐNG ANH VĂN HỘI VIỆT MỸ (VUS) NHẬN CHỨNG CHỈ" style="cursor: pointer;"><img src="img/tin_tuc_3.png" alt="" >
+                        <div class="news__img">
+                            
+                            <div class="caption">
+                                <span>842 HỌC VIÊN CỦA HỆ THỐNG ANH VĂN HỘI VIỆT MỸ (VUS) NHẬN CHỨNG CHỈ</p>
+                            </div>
+                        </div>
+                        <div class="news__img">
+                            <a href="#" title="NGÀY HỘI DÀNH CHO GIÁO VIÊN ANH NGỮ - VUS TESOL 2016" style="cursor: pointer;"><img src="img/tin_tuc_4.png" alt=""></a>
+                            <div class="caption">
+                                <span>NGÀY HỘI DÀNH CHO GIÁO VIÊN ANH NGỮ - VUS TESOL 2016</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                </figure>
+                
+            </div>
+        </div>
+    </section> 
+    <footer>
+
+    </footer>  
+    
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+            //document.getElementById('main').style.marginLeft = '250px';
+            
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginLeft = '0';   
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+
+
+    
+        
+    </script>
+</body>
+</html>

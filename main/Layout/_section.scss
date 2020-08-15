@@ -1,0 +1,119 @@
+.about-us {
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    &__caption {
+        line-height: 30px;
+    }
+}
+
+.courses {
+    &__title {
+        text-align: center;
+    }
+    
+    &__list-cards {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    &__list-card {
+        margin: 10px;
+        img {
+            margin-bottom: 20px;
+        }
+        a {
+            text-decoration: none;
+            
+            &:hover {
+                color: red;
+            }
+
+        }
+        h4 {
+            font-size: 14px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+.news {
+    &__title {
+        text-align: center;
+    }
+    &__imgs {
+        display: flex;
+        justify-content: center;
+         
+    }
+    &__img {
+        border-bottom: 4px solid red;
+        img {
+            width: 280px;
+            height: 184px;
+        }
+        &-col {
+            margin: 10px;
+        }
+        
+    }
+
+}
+.news__img--huge {
+    border-bottom: 4px solid red;
+    margin: 10px;
+    
+}
+.news__imgs .news__img--huge {
+    position: relative;
+    
+    
+    
+}
+.news__imgs .news__img--huge .caption-hot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    height: 40px;
+    padding-bottom: 14px;
+    opacity: 0;
+}
+
+.news__imgs .news__img--huge .caption-hot span {
+    color: #fff;
+    font-size: 20px;
+}
+
+.news__imgs .news__img--huge a:hover ~ .caption-hot {
+    opacity: 1;
+    bottom: 0;
+}
+
+
+.news__img-col .news__img {
+    position: relative;
+}
+.news__img-col .news__img .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    opacity: 0;
+    background:#27252585;
+    padding-top: 5px;
+}
+.news__img-col .news__img .caption span {
+    color: #fff;
+    font-size: 14px;
+    
+}
+.news__img-col .news__img a:hover ~ .caption {
+    opacity: 1;
+}
+

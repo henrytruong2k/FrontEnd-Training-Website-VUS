@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+body {
+  font-family: "Arial", serif;}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; }
+  .banner__logo {
+    cursor: pointer;
+    margin-left: 8px; }
+  .banner__slogan {
+    cursor: pointer;
+    margin-right: 150px; }
+
+.slider {
+  overflow: hidden;
+}
+.slider figure {
+  position: relative;
+  width: 300%;
+  margin: 0;
+  left: 0;
+  float: left;
+  animation: 10s sliderAuto infinite;
+}
+.slider figure img {
+   width: 33.33%; 
+  float: left;
+}
+
+
+
+.about-us {
+  margin: 10px;
+  text-align: center;
+  margin-bottom: 30px; }
+  .about-us__caption {
+    line-height: 30px; }
+  
+.courses__title {
+  text-align: center; }
+.courses__list-cards {
+  display: flex;
+  justify-content: center;
+  padding: 20px; }
+.courses__list-card {
+  position: relative;
+  margin: 10px; }
+  .courses__list-card img {
+    width: 295px;
+    margin-bottom: 20px; }
+  .courses__list-card a {
+    text-decoration: none; }
+    .courses__list-card a:hover {
+      color: red; }
+  .courses__list-card h4 {
+    font-size: 14px; }
+  .courses__list-card p {
+    font-size: 14px; }
+.courses__list-card .caption {
+  position: absolute;
+  bottom: 20%;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  text-align: center;
+  background-color: #a499e4;
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0;
+}
+.courses__list-card a:hover ~ .caption {
+  opacity: 1;
+  
+}
+.caption:hover {
+  opacity: 1;
+  
+}
+.news__title {
+  text-align: center; }
+.news__imgs {
+  display: flex;
+  justify-content: center; }
+.news__img {
+  border-bottom: 4px solid red; }
+  .news__img img {
+    width: 280px;
+    height: 184px; }
+  .news__img-col {
+    margin: 10px; }
+
+.news__img--huge {
+  border-bottom: 4px solid red;
+  margin: 10px; }
+
+.news__imgs .news__img--huge {
+  position: relative; }
+    
+.news__imgs .news__img--huge .caption-hot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 60px;
+  
+  padding-left: 10px;
+  opacity: 1;
+  background: #27252585;
+  overflow: hidden; 
+   }
+
+.news__imgs .news__img--huge .caption-hot span {
+  color: #fff;
+  font-size: 20px; }
+
+.news__img-col .news__img {
+  position: relative; }
+
+.news__img-col .news__img .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 60px;
+  
+  padding-left: 10px;
+  opacity: 1;
+  background: #27252585;
+  overflow: hidden; 
+   }
+
+.news__img-col .news__img .caption span {
+  color: #fff;
+  font-size: 14px; }
+
+
+
+/*# sourceMappingURL=style.css.map */
+.news__imgs .news__img--huge:hover {
+  opacity: 1;
+}
+.nav {
+  background-color: #3b5998;
+  overflow: hidden;
+  height: 60px;
+  width: 100%;
+  
+}
+.nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 7px;
+  text-decoration: none;
+  font-size: 16px;
+}
+.nav ul {
+  padding: 8px 0 0px 15px;
+  list-style: none;
+}
+.nav a:hover {
+  background-color: #ddd;
+  color: #000;
+  cursor: pointer;
+}
+
+
+.side-nav {
+  height:100%;
+  width:0;
+  position: fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top:60px;
+  transition: 0.5s;
+}
+
+.side-nav a{
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
+}
+.side-nav a:hover {
+  background-color: #ddd;
+  color: #000;
+  
+}
+.side-nav a:first-child {
+  background-color: #111;
+  padding: 5px;
+}
+.side-nav a:first-child:hover {
+  transform: scale(1.5);
+  color: red;
+}
+.side-nav .btn-close{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  transition: 1s;
+  border-radius: 20%;
+  opacity: .3;
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dots {
+  position: absolute;
+  top: 90%;
+  left: 48.5%;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+/* responsive */
+@media(max-width:376px) {
+  .courses__list-card:nth-child(1) .caption, .courses__list-card:nth-child(2) .caption {
+    bottom: 15%;
+  }
+  .courses__list-card .caption {
+    bottom: 23%;
+  }
+  .nav {
+    display: block;  
+  }
+  .prev, .next {
+    top: 40%;
+  }
+  .dots {
+    top: 49%;
+    left: 45%
+  }
+  
+   
+  .banner div img{
+    width: 200px;
+    height: 50px;
+    margin-left: -10px;
+    margin-right: -30px;
+  }
+  .banner .banner__slogan {
+    right:10px;
+  }
+  .slider figure img {
+    height: 250px;
+  }
+  
+  .line {
+    height: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .about-us {
+    text-align: left;
+  }
+  .about-us__title {
+    text-align: center;
+  }
+  .about-us__caption .about-us__caption-row {
+    display: table-row;
+  }
+  .about-us__caption .about-us__caption-row .about-us__caption-cell {
+    display: table-cell;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  .about-us__caption .about-us__caption-row .about-us__caption-cell.box1 {
+    background-color: #68f987;
+  }
+  .about-us__caption .about-us__caption-row .about-us__caption-cell.box2 {
+    background-color: #ff75e8;
+  }
+
+  .courses__list-cards {
+    display: block;  
+    
+  }
+  
+  .courses__list-card h4 {
+    font-size: 18px;
+  }
+  
+  .courses__list-card img {
+    margin-bottom: 0px;
+  }
+  .news__imgs {
+    display: block;
+    
+  }
+  .news__img img {
+    width: 100%;
+  }
+  .news__img--huge img {
+    width: 100%;
+  }
+  
+  .news__img-col:last-child {
+    
+    display: flex;
+  }
+  .news__img-col .news__img {
+    margin: 3px;
+  }
+  .mySlides img {
+    width: 100%;
+    height: 200px;
+    
+  } 
+}
+
+
+
+
+
+@media(min-width:376px) {
+  .open-slide{display: none;}
+}
+
