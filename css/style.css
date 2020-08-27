@@ -6,6 +6,7 @@ body {
   font-family: "Arial", serif;}
 
 .banner {
+  top: 500%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px; }
@@ -15,7 +16,6 @@ body {
   .banner__slogan {
     cursor: pointer;
     margin-right: 150px; }
-
 .slider {
   overflow: hidden;
 }
@@ -143,15 +143,25 @@ body {
 
 
 /*# sourceMappingURL=style.css.map */
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+  
+}
 .news__imgs .news__img--huge:hover {
   opacity: 1;
 }
 .nav {
   background-color: #3b5998;
-  overflow: hidden;
   height: 60px;
   width: 100%;
-  
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  overflow: hidden;
+  z-index: 999;
 }
 .nav a {
   float: left;
@@ -163,7 +173,7 @@ body {
   font-size: 16px;
 }
 .nav ul {
-  padding: 8px 0 0px 15px;
+  padding: 8px;
   list-style: none;
 }
 .nav a:hover {
@@ -222,6 +232,8 @@ body {
   padding: 10px;
   overflow: hidden;
   width: 100%;
+  position: absolute;
+  top: 100px;
 }
 
 /* Slideshow container */
@@ -322,6 +334,7 @@ body {
   }
   .nav {
     display: block;  
+    position: unset;
   }
   .prev, .next {
     top: 40%;
@@ -396,10 +409,10 @@ body {
   .news__img--huge img {
     width: 100%;
   }
-  
-  .news__img-col:last-child {
-    
-    display: flex;
+  .news__img--huge img:nth-child(3) img {
+    width: 100%;
+    height: 100%;
+    padding: 0 3px;
   }
   .news__img-col .news__img {
     margin: 3px;
